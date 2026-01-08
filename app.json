@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "apothiquiz-mobile",
-    "slug": "apothiquiz-mobile",
+    "name": "Med Classify",
+    "slug": "med-classify",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "apothiquizmobile",
+    "scheme": "medclassify",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

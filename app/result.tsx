@@ -19,7 +19,7 @@ export default function ResultScreen() {
       }}
     >
       <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 16 }}>
-        Quiz Completed
+        Med Classify – Results
       </Text>
 
       <Text style={{ fontSize: 18 }}>

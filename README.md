@@ -1,69 +1,34 @@
-<<<<<<< HEAD
-# apothiquiz-mobile
-Gamified learning for drug classification
-=======
-# Welcome to your Expo app 👋
+# Med Classify
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Med Classify is a gamified mobile learning application designed to support the classification of pharmaceutical drugs through interactive quizzes.
 
-## Get started
+## Project Overview
+This application was developed as an Applied Research Project for the MSc in Information Systems with Computing. The primary objective of the project is to evaluate the effectiveness of gamified learning compared to non-gamified approaches in improving learners’ understanding of drug classification.
 
-1. Install dependencies
+## Features
+- Quiz-based learning for drug classification
+- Gamified and non-gamified modes for comparative evaluation
+- Score tracking and results summary
+- Mobile-first design using React Native
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
->>>>>>> f606820 (Initial commit: Expo setup and artefact structure)
-# ApothiQuiz Mobile
-
-Gamified mobile learning application for drug classification, developed as an applied research artefact for the MSc in Information Systems with Computing.
-
-## Overview
-This project investigates the effectiveness of gamified learning in improving pharmacy students’ understanding of drug classification.
-
-## Technology
+## Technology Stack
 - Expo (React Native)
 - JavaScript
 - GitHub
 
 ## Research Context
-This application forms part of an Applied Research Project and is evaluated using quantitative performance metrics and qualitative user feedback.
+Med Classify serves as the core artefact for an applied research study. User performance data and interaction outcomes are analysed using quantitative metrics, supported by qualitative feedback, to assess learning effectiveness.
+
+## Getting Started
+
+### Install dependencies
+```bash
+npm install
+```
+
+### Run the application
+```bash
+npx expo start
+```
+
+The application can be launched in a web browser, Android emulator, iOS simulator, or on a physical device using Expo Go.
