@@ -15,8 +15,8 @@ import { getChapterProgress, getUserStats } from '../src/utils/storage';
 
 export default function ChaptersScreen() {
   const router = useRouter();
-  const [chapterProgress, setChapterProgress] = useState({});
-  const [userStats, setUserStats] = useState(null);
+  const [chapterProgress, setChapterProgress] = useState<Record<number, any>>({});
+  const [userStats, setUserStats] = useState<any>(null);
 
   useEffect(() => {
     loadChapterProgress();
@@ -26,25 +26,25 @@ export default function ChaptersScreen() {
     const stats = await getUserStats();
     setUserStats(stats);
     
-    const progress = {};
+    const progress: Record<number, any> = {};
     for (const chapter of chapters) {
-      const chapterStats = await getChapterProgress(chapter.id);
+      const chapterStats = await getChapterProgress(chapter.id as any);
       progress[chapter.id] = chapterStats;
     }
     setChapterProgress(progress);
   };
 
-  const getCompletionPercentage = (chapterId) => {
+  const getCompletionPercentage = (chapterId: number) => {
     const progress = chapterProgress[chapterId];
     if (!progress || !progress.totalQuestions) return 0;
     return Math.round((progress.completedQuestions / progress.totalQuestions) * 100);
   };
 
-  const isChapterCompleted = (chapterId) => {
+  const isChapterCompleted = (chapterId: number) => {
     return getCompletionPercentage(chapterId) >= 80; // 80% completion threshold
   };
 
-  const startChapterQuiz = (chapterId, mode) => {
+  const startChapterQuiz = (chapterId: number, mode: string) => {
     router.push({
       pathname: '/quiz',
       params: { chapterId: chapterId.toString(), mode }
@@ -61,7 +61,7 @@ export default function ChaptersScreen() {
       >
         <Text style={styles.headerTitle}>Chapters</Text>
         <Text style={styles.headerSubtitle}>
-          {Object.values(chapterProgress).filter(p => p && p.completed).length} / {chapters.length} Completed
+          {Object.values(chapterProgress).filter((p: any) => p && p.completed).length} / {chapters.length} Completed
         </Text>
       </LinearGradient>
 
